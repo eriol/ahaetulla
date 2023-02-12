@@ -3,9 +3,20 @@
 A simple tool to send messages into [FreakWAN](https://github.com/antirez/sx1276-micropython-driver/)
 over Bluetooth low energy.
 
+**This project is in pre-alpha please use the [python implementation](https://pypi.org/project/freakble/)
+instead.
+
 ## Installation
 
-WIP
+### From source
+
+To build `go-freakble` and install it to `$GOPATH/bin/freakble` you need a
+working Go compiler:
+
+```
+go install noa.mornie.org/eriol/go-freakble/cmd/freakble@latest
+
+```
 
 ## Usage
 
