@@ -15,7 +15,6 @@ working Go compiler:
 
 ```
 go install noa.mornie.org/eriol/go-freakble/cmd/freakble@latest
-
 ```
 
 ## Usage
