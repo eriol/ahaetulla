@@ -10,12 +10,15 @@ instead.**
 
 ### From source
 
-To build `go-freakble` and install it to `$GOPATH/bin/freakble` you need a
-working Go compiler:
+To build the latest version of `go-freakble` run:
 
 ```
-go install noa.mornie.org/eriol/go-freakble/cmd/freakble@latest
+cd /tmp; GOPATH=/tmp/go go install noa.mornie.org/eriol/go-freakble/cmd/freakble@latest
 ```
+
+You will find the binary at `/tmp/go/bin/freakble`. You don't need to set
+`GOPATH` if you already have it set and you are fine having freakble installed
+there.
 
 ## Usage
 
