@@ -8,6 +8,9 @@ import (
 	"tinygo.org/x/bluetooth"
 )
 
+// Scan for BLE devices for the specified time t.
+//
+// Devices are returned in descendind RSSI order.
 func ScanUntilTimeout(t float32) []bluetooth.ScanResult {
 	adapter := bluetooth.DefaultAdapter
 	timer := time.NewTimer(time.Duration(t) * time.Second)
