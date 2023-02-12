@@ -1,6 +1,6 @@
 # build freakble
 build:
-    @cd cmd/freakble && go build && mv freakble ../..
+    @go build ./cmd/freakble
 
 # remove artifacs
 clean:
