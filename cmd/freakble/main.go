@@ -1,7 +1,7 @@
 package main
 
-import "noa.mornie.org/eriol/go-freakble/commands"
+import "noa.mornie.org/eriol/go-freakble/cli"
 
 func main() {
-	commands.Execute()
+	cli.Execute()
 }
