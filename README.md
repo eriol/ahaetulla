@@ -4,7 +4,7 @@ A simple tool to send messages into [FreakWAN](https://github.com/antirez/sx1276
 over Bluetooth low energy.
 
 **This project is in pre-alpha please use the [python implementation](https://pypi.org/project/freakble/)
-instead.
+instead.**
 
 ## Installation
 
