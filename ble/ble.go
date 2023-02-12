@@ -21,17 +21,13 @@ func ScanUntilTimeout(t float32) []bluetooth.ScanResult {
 	go func() {
 		<-timer.C
 		timerFired <- true
+		close(timerFired)
 	}()
 
 	go func() {
-		for {
-			select {
-			case _ = <-timerFired:
-				adapter.StopScan()
-			default:
-			}
-
-		}
+		for range timerFired {
+		} // Block until we consume timerFired channel.
+		_ = adapter.StopScan()
 	}()
 
 	var devices []bluetooth.ScanResult
