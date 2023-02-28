@@ -22,6 +22,6 @@ var sendCmd = &cobra.Command{
 
 func init() {
 	sendCmd.Flags().StringVar(&address, "device", "", "ble device address")
-	sendCmd.MarkFlagRequired("device")
+	_ = sendCmd.MarkFlagRequired("device")
 	rootCmd.AddCommand(sendCmd)
 }

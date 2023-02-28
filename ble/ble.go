@@ -66,7 +66,7 @@ func FindDeviceByAddress(address string) bluetooth.ScanResult {
 
 	err = adapter.Scan(func(adapter *bluetooth.Adapter, result bluetooth.ScanResult) {
 		if result.Address.String() == address {
-			adapter.StopScan()
+			_ = adapter.StopScan()
 			ch <- result
 		}
 	})
@@ -112,5 +112,5 @@ func Send(address, text string) {
 		log.Error("Could not send: ", err)
 	}
 
-	device.Disconnect()
+	_ = device.Disconnect()
 }
