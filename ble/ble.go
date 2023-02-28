@@ -56,14 +56,9 @@ func ScanUntilTimeout(t float32) []bluetooth.ScanResult {
 // TODO: right now it's unbounded, ad a max timeout.
 func FindDeviceByAddress(adapter *bluetooth.Adapter, address string) bluetooth.ScanResult {
 
-	err := adapter.Enable()
-	if err != nil {
-		log.Error(err)
-	}
-
 	ch := make(chan bluetooth.ScanResult, 1)
 
-	err = adapter.Scan(func(adapter *bluetooth.Adapter, result bluetooth.ScanResult) {
+	err := adapter.Scan(func(adapter *bluetooth.Adapter, result bluetooth.ScanResult) {
 		if result.Address.String() == address {
 			_ = adapter.StopScan()
 			ch <- result
