@@ -1,6 +1,6 @@
 package main
 
-import "noa.mornie.org/eriol/go-freakble/cli"
+import "noa.mornie.org/eriol/ahaetulla/cli"
 
 func main() {
 	cli.Execute()

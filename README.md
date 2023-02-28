@@ -1,6 +1,6 @@
-# go-freakble
+# ahaetulla
 
-A simple tool to send messages into [FreakWAN](https://github.com/antirez/sx1276-micropython-driver/)
+A simple tool to send messages into [FreakWAN](https://github.com/antirez/freakwan)
 over Bluetooth low energy.
 
 **This project is in pre-alpha please use the [python implementation](https://pypi.org/project/freakble/)
@@ -10,13 +10,13 @@ instead.**
 
 ### From source
 
-To build the latest version of `go-freakble` run:
+To build the latest version of `ahaetulla` run:
 
 ```
-cd /tmp; GOPATH=/tmp/go go install noa.mornie.org/eriol/go-freakble/cmd/freakble@latest
+cd /tmp; GOPATH=/tmp/go go install noa.mornie.org/eriol/ahaetulla/cmd/ahaetulla@latest
 ```
 
-You will find the binary at `/tmp/go/bin/freakble`. You don't need to set
+You will find the binary at `/tmp/go/bin/ahaetulla`. You don't need to set
 `GOPATH` if you already have it set and you are fine having freakble installed
 there.
 
@@ -26,7 +26,7 @@ there.
 A simple tool to send messages into FreakWAN.
 
 Usage:
-  freakble [command]
+  ahaetulla [command]
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
@@ -34,7 +34,5 @@ Available Commands:
   scan        Scan to find BLE devices.
 
 Flags:
-  -h, --help   help for freakble
-
-Use "freakble [command] --help" for more information about a command.
+  -h, --help   help for ahaetulla
 ```

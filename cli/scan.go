@@ -6,7 +6,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"noa.mornie.org/eriol/go-freakble/ble"
+	"noa.mornie.org/eriol/ahaetulla/ble"
 )
 
 var scanTime float32

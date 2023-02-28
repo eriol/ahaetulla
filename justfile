@@ -1,7 +1,7 @@
-# build freakble
+# build ahaetulla
 build:
-    @go build ./cmd/freakble
+    @go build ./cmd/ahaetulla
 
 # remove artifacs
 clean:
-    @rm -rf freakble
+    @rm -rf ahaetulla

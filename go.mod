@@ -1,4 +1,4 @@
-module noa.mornie.org/eriol/go-freakble
+module noa.mornie.org/eriol/ahaetulla
 
 go 1.19
 
