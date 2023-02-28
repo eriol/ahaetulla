@@ -6,6 +6,9 @@ over Bluetooth low energy.
 **This project is in pre-alpha please use the [python implementation](https://pypi.org/project/freakble/)
 instead.**
 
+The name if from [Leptophis ahaetulla](https://en.wikipedia.org/wiki/Leptophis_ahaetulla),
+a snake commonly known as the **lora**.
+
 ## Installation
 
 ### From source
